@@ -109,7 +109,7 @@ export default function Consulta() {
       {/* MODAL sobre toda la pantalla */}
       {confirmModal.open && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 backdrop-blur-sm"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-white/95"
           style={{
             position: "fixed",
             top: 0,
@@ -119,7 +119,7 @@ export default function Consulta() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "rgba(0,0,0,0.7)",
+            backgroundColor: "rgba(255,255,255,0.95)",
             zIndex: 99999,
           }}
         >
@@ -130,10 +130,10 @@ export default function Consulta() {
               position: "relative",
             }}
           >
-            <h3 className="text-lg font-bold text-[#FF6F3C] mb-2">
+            <h3 className="text-lg font-bold text-red-600 mb-2">
               ⚠️ Confirmar eliminación
             </h3>
-            <p className="mb-4 text-gray-700">
+            <p className="mb-4 text-red-600 font-bold">
               ¿Seguro que quieres borrar <strong>{confirmModal.nombre}</strong> del inventario?
             </p>
             <div className="flex justify-center gap-4">
